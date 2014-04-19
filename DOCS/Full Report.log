@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  19 APR 2014 16:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  20 APR 2014 00:21
 entering extended mode
 **D:/Users/James/University*Documents/Modules/CS223/HCI-FishingAssociationWebsi
 te/DOCS/Full*Report.tex
@@ -177,36 +177,91 @@ Missing character: There is no ™ in font cmbx10!
 )
 \tf@toc=\write3
  [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+
+<img/TA-RP1.png, id=12, 2158.0625pt x 1480.53125pt>
+File: img/TA-RP1.png Graphic file (type png)
+ <use img/TA-RP1.png>
+Package pdftex.def Info: img/TA-RP1.png used on input line 170.
+(pdftex.def)             Requested size: 375.80542pt x 257.80916pt.
+
+[3 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWeb
+site/DOCS/img/TA-RP1.png (PNG copy)>]
+<img/TA-UCD1.png, id=17, 2333.71875pt x 2107.875pt>
+File: img/TA-UCD1.png Graphic file (type png)
+ <use img/TA-UCD1.png>
+Package pdftex.def Info: img/TA-UCD1.png used on input line 178.
+(pdftex.def)             Requested size: 375.80542pt x 339.42184pt.
+
+<img/TA-DFD-Transaction.png, id=18, 2409.0pt x 1731.46875pt>
+File: img/TA-DFD-Transaction.png Graphic file (type png)
+
+<use img/TA-DFD-Transaction.png>
+Package pdftex.def Info: img/TA-DFD-Transaction.png used on input line 191.
+(pdftex.def)             Requested size: 375.80542pt x 270.09218pt.
+ [4 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
+bsite/DOCS/img/TA-UCD1.png (PNG copy)>]
+<img/TA-DFD-User.png, id=22, 2333.71875pt x 1355.0625pt>
+File: img/TA-DFD-User.png Graphic file (type png)
+
+<use img/TA-DFD-User.png>
+Package pdftex.def Info: img/TA-DFD-User.png used on input line 197.
+(pdftex.def)             Requested size: 328.82706pt x 190.92737pt.
+ [5 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
+bsite/DOCS/img/TA-DFD-Transaction.png (PNG copy)> <D:/Users/James/University Do
+cuments/Modules/CS223/HCI-FishingAssociationWebsite/DOCS/img/TA-DFD-User.png (P
+NG copy)>]
+<img/TA-SD-Batches.png, id=26, 2221.29875pt x 1694.33pt>
+File: img/TA-SD-Batches.png Graphic file (type png)
+
+<use img/TA-SD-Batches.png>
+Package pdftex.def Info: img/TA-SD-Batches.png used on input line 206.
+(pdftex.def)             Requested size: 328.82706pt x 250.80345pt.
+
+<img/TA-SD-Users.png, id=27, 2032.59375pt x 1053.9375pt>
+File: img/TA-SD-Users.png Graphic file (type png)
+
+<use img/TA-SD-Users.png>
+Package pdftex.def Info: img/TA-SD-Users.png used on input line 212.
+(pdftex.def)             Requested size: 328.82706pt x 170.49893pt.
+ [6 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
+bsite/DOCS/img/TA-SD-Batches.png (PNG copy)> <D:/Users/James/University Documen
+ts/Modules/CS223/HCI-FishingAssociationWebsite/DOCS/img/TA-SD-Users.png (PNG co
+py)>]
 Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
- [3]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 198.
-
-
+ [7] 
 AED: lastpage setting LastPage
-[4
+[8
 
 ]
 ("D:\Users\James\University Documents\Modules\CS223\HCI-FishingAssociationWebsi
 te\DOCS\Full Report.aux") ) 
 Here is how much of TeX's memory you used:
- 2556 strings out of 493921
- 39587 string characters out of 3144875
- 97249 words of memory out of 3000000
- 5861 multiletter control sequences out of 15000+200000
+ 2613 strings out of 493921
+ 40653 string characters out of 3144875
+ 99249 words of memory out of 3000000
+ 5907 multiletter control sequences out of 15000+200000
  8501 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,10n,43p,328b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,43p,648b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb>
-Output written on "Full Report.pdf" (4 pages, 66417 bytes).
+nts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb>
+Output written on "Full Report.pdf" (8 pages, 494238 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

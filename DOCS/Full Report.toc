@@ -1,11 +1,11 @@
 \contentsline {section}{Introduction}{3}
 \contentsline {section}{Task Analysis}{3}
 \contentsline {subsection}{Who is involved?}{3}
-\contentsline {subsection}{Use Case Diagram}{3}
-\contentsline {subsection}{Data flow}{3}
-\contentsline {subsection}{State transistions}{3}
-\contentsline {section}{Design}{3}
-\contentsline {subsection}{Interaction Design}{3}
-\contentsline {subsection}{Navigation}{3}
-\contentsline {section}{Prototype}{3}
-\contentsline {section}{Shneiderman’s 8 Golden Rules}{3}
+\contentsline {subsection}{Use Case Diagram}{4}
+\contentsline {subsection}{Data flow}{4}
+\contentsline {subsection}{State Transitions}{6}
+\contentsline {section}{Design}{7}
+\contentsline {subsection}{Interaction Design}{7}
+\contentsline {subsection}{Navigation}{7}
+\contentsline {section}{Prototype}{7}
+\contentsline {section}{Shneiderman’s 8 Golden Rules}{7}
