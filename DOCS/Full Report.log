@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  20 APR 2014 00:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  20 APR 2014 13:14
 entering extended mode
 **D:/Users/James/University*Documents/Modules/CS223/HCI-FishingAssociationWebsi
 te/DOCS/Full*Report.tex
@@ -234,13 +234,13 @@ Package pdftex.def Info: img/TA-SD-Users.png used on input line 212.
  [6 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
 bsite/DOCS/img/TA-SD-Batches.png (PNG copy)> <D:/Users/James/University Documen
 ts/Modules/CS223/HCI-FishingAssociationWebsite/DOCS/img/TA-SD-Users.png (PNG co
-py)>]
+py)>] [7]
 Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
- [7] 
+ [8] 
 AED: lastpage setting LastPage
-[8
+[9
 
 ]
 ("D:\Users\James\University Documents\Modules\CS223\HCI-FishingAssociationWebsi
@@ -248,20 +248,20 @@ te\DOCS\Full Report.aux") )
 Here is how much of TeX's memory you used:
  2613 strings out of 493921
  40653 string characters out of 3144875
- 99249 words of memory out of 3000000
+ 101249 words of memory out of 3000000
  5907 multiletter control sequences out of 15000+200000
  8501 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,10n,43p,648b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,43p,750b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb>
-Output written on "Full Report.pdf" (8 pages, 494238 bytes).
+Output written on "Full Report.pdf" (9 pages, 499269 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
