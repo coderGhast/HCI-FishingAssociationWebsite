@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <title>Consolidated Fishing Association - Admin Controls</title>
+
+
+    <script>
+        function create_account(){
+            var form = document.getElementById("new_user");
+
+            if(form.name.value != "" && form.email.value != "" 
+                && form.account_type.value != "------" &&form.password != ""){
+                if(check_email(form.email.value)){
+                    window.location = "accountmade.html";
+                } else {
+                    alert("Email is not an email. Example: email@email.com");
+                }
+            } else {
+                alert("One or more fields are blank. Please fill in these fields and then try again.");
+            }
+        }
+
+        function check_email(email){      
+            var testMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return testMail.test(email); } 
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <div id="header_title">
+                <h1>Consolidated Fishing Association</h1>
+            </div>
+            <div id="logged_in">Logged in as <em>admin</em></div>
+        </div>
+
+        <div id="nav">
+            <div id="nav_holder" name="top">
+                <ul>
+                    <div class="link_holder"><li class="topLink"><a href="adminindex.html">Home</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="admin.html">Admin Controls</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="index.html">Logout</a></li></div>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="content_wrapper">
+            <div id="content_space">
+                <h3>Create a new User Account</h3>
+                <p>Please enter the new user's information below in order to create a new user account, then click 'Create Account' when all fields have been completed.</p>
+
+                <div id="user_boxes">
+                    <form id="new_user">
+                        <p>Username:</p>
+                        <p><input type="text" placeholder="Name" name="name" class="user_entry"></p>
+                        <p>E-mail:</p>
+                        <p><input type="email" placeholder="email@email.com" name="email" class="user_entry"></p>
+                        <p>Password:</p>
+                        <p><input type="password" placeholder="Password" name="password" class="user_entry"></p> 
+                        <p>Account Type:</p>
+                        <p><select name="account_type" form="new_user" required>
+                          <option disabled selected>------</option>
+                          <option value="admin">Administration</option>
+                          <option value="buyer">Buyer</option>
+                          <option value="fisherman">Fisherman</option>
+                          <option value="warehouse">Warehouse</option>
+                      </select>
+                  </p>  
+                  <br />
+                  <input type="button" value="Create Account" onclick="create_account()" class="login_button">
+              </form>
+          </div>
+
+      </div>
+  </div>
+
+  <div id="footer"></div>
+
+</div>
+</body>
+</html>

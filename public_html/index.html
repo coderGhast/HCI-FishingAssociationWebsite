@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-<title>Consolidated Fishing Association</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <title>Consolidated Fishing Association</title>
+
+
+    <script>
+        function check_login(){
+            var form = document.getElementById("login");
+            if(form.name.value == "admin" && form.password.value == "pass"){ 
+               window.location = "admin.html";  
+            } else if (form.name.value=="buyer" && form.password.value=="pass"){
+                window.location = "buyer.html";
+            } else if (form.name.value == "fishermen" && form.password.value=="pass"){
+                window.location = "fishermen.html";
+            } else if (form.name.value == "warehouse" && form.password.value == "pass"){
+                window.location = "warehouse.html";
+            } else {
+                alert("Wrong Username or Password.");
+            }
+        }
+    </script>
+
 </head>
 <body>
 
+    <div id="wrapper">
+
+        <div id="header">
+            <div id="header_title">
+                <h1>Consolidated Fishing Association</h1>
+            </div>
+        </div>
+
+        <div id="nav">
+            <div id="nav_holder" name="top">
+                <ul>
+                    <div class="link_holder"><li class="topLink"><a href="index.html">Home</a></li></div>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="content_wrapper">
+            <div id="content_space">
+                <p>Welcome to the Consolidated Fishing Association website. Please log in to access your unique user account and tasks.</p>
+                <br />
+                <div class="login_box">
+                        <form id="login">
+                           <p><input type="text" placeholder="Username" name="name" class="login_entry"></p>
+                           <p><input type="password" placeholder="Password" name="password" class="login_entry"></p> 
+
+                           <input type="button" value="Login" onclick="check_login()" class="login_button">
+                        </form>
+                </div>
+                <br />
+                <p>If you require any assistance, please phone our helpline on 012345 5159.</p>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
 </body>
 </html>
