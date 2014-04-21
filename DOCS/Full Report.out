@@ -5,9 +5,18 @@
 \BOOKMARK [2][-]{section*.8}{Data flow}{section*.3}% 5
 \BOOKMARK [2][-]{section*.11}{State Transitions}{section*.3}% 6
 \BOOKMARK [1][-]{section*.14}{Design}{}% 7
-\BOOKMARK [2][-]{section*.15}{Fishermen}{section*.14}% 8
-\BOOKMARK [2][-]{section*.16}{Warehouse Staff}{section*.14}% 9
-\BOOKMARK [2][-]{section*.17}{Buyer}{section*.14}% 10
-\BOOKMARK [2][-]{section*.18}{Administration}{section*.14}% 11
-\BOOKMARK [1][-]{section*.19}{Prototype}{}% 12
-\BOOKMARK [1][-]{section*.20}{Shneiderman’s 8 Golden Rules}{}% 13
+\BOOKMARK [2][-]{section*.16}{Fishermen}{section*.14}% 8
+\BOOKMARK [2][-]{section*.18}{Warehouse Staff}{section*.14}% 9
+\BOOKMARK [2][-]{section*.20}{Buyer}{section*.14}% 10
+\BOOKMARK [2][-]{section*.22}{Administration}{section*.14}% 11
+\BOOKMARK [1][-]{section*.23}{Prototype}{}% 12
+\BOOKMARK [1][-]{section*.24}{Shneiderman’s 8 Golden Rules}{}% 13
+\BOOKMARK [2][-]{section*.25}{Consistency}{section*.24}% 14
+\BOOKMARK [2][-]{section*.26}{Shortcuts}{section*.24}% 15
+\BOOKMARK [2][-]{section*.27}{Informative Feedback}{section*.24}% 16
+\BOOKMARK [2][-]{section*.28}{Closure Dialog}{section*.24}% 17
+\BOOKMARK [2][-]{section*.29}{Error Handling}{section*.24}% 18
+\BOOKMARK [2][-]{section*.30}{Action Reversal}{section*.24}% 19
+\BOOKMARK [2][-]{section*.31}{Internal Locus of Control}{section*.24}% 20
+\BOOKMARK [2][-]{section*.32}{Short-Term Memory Load Reduction}{section*.24}% 21
+\BOOKMARK [1][-]{section*.33}{Reflection}{}% 22

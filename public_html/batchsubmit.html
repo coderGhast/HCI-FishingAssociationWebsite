@@ -6,6 +6,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <title>Consolidated Fishing Association - Batches Registered</title>
 
+    <script>
+        function confirm_undo(){
+            var confirmation = window.confirm("Are you sure you want to undo your last action?");
+            if(confirmation == true){
+                document.getElementById('undone').style.display='block';
+            }
+        }
+
+    </script>
+
 </head>
 <body>
 
@@ -30,13 +40,13 @@
 
         <div id="content_wrapper">
             <div id="content_space">
-                
+
                 <div class="center_box">
-                <p>Batch successfully created and labels printed for each crate.</p>
-                <br />
+                    <p>Batch successfully created and labels printed for each crate.</p>
+                    <br />
                     <form id="admin_action">
                         <p><input type="button" value="Create A New Batch" onclick="window.location ='fishermen.html'" class="act_button"></p>
-                        <p><input type="button" value="Undo Last Batch Creation" onclick="document.getElementById('undone').style.display='block';" class="act_button"></p>
+                        <p><input type="button" value="Undo Last Batch Creation" onclick="confirm_undo()" class="act_button"></p>
                     </form>
                     <br />
                     <div id="undone" style="display:none; color:#DE2926;">Batch creation successfully reversed.</div>

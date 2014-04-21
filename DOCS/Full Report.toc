@@ -5,9 +5,18 @@
 \contentsline {subsection}{Data flow}{5}{section*.8}
 \contentsline {subsection}{State Transitions}{6}{section*.11}
 \contentsline {section}{Design}{8}{section*.14}
-\contentsline {subsection}{Fishermen}{8}{section*.15}
-\contentsline {subsection}{Warehouse Staff}{8}{section*.16}
-\contentsline {subsection}{Buyer}{8}{section*.17}
-\contentsline {subsection}{Administration}{9}{section*.18}
-\contentsline {section}{Prototype}{9}{section*.19}
-\contentsline {section}{Shneiderman’s 8 Golden Rules}{9}{section*.20}
+\contentsline {subsection}{Fishermen}{8}{section*.16}
+\contentsline {subsection}{Warehouse Staff}{9}{section*.18}
+\contentsline {subsection}{Buyer}{10}{section*.20}
+\contentsline {subsection}{Administration}{11}{section*.22}
+\contentsline {section}{Prototype}{11}{section*.23}
+\contentsline {section}{Shneiderman’s 8 Golden Rules}{12}{section*.24}
+\contentsline {subsection}{Consistency}{12}{section*.25}
+\contentsline {subsection}{Shortcuts}{12}{section*.26}
+\contentsline {subsection}{Informative Feedback}{12}{section*.27}
+\contentsline {subsection}{Closure Dialog}{12}{section*.28}
+\contentsline {subsection}{Error Handling}{13}{section*.29}
+\contentsline {subsection}{Action Reversal}{13}{section*.30}
+\contentsline {subsection}{Internal Locus of Control}{13}{section*.31}
+\contentsline {subsection}{Short-Term Memory Load Reduction}{13}{section*.32}
+\contentsline {section}{Reflection}{14}{section*.33}
