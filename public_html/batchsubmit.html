@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <title>Consolidated Fishing Association - Batches Registered</title>
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <div id="header_title">
+                <h1>Consolidated Fishing Association</h1>
+            </div>
+            <div id="logged_in">Logged in as <em>fishermen</em></div>
+        </div>
+
+        <div id="nav">
+            <div id="nav_holder" name="top">
+                <ul>
+                    <div class="link_holder"><li class="topLink"><a href="adminindex.html">Home</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="admin.html">Register Batch</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="index.html">Logout</a></li></div>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content_wrapper">
+            <div id="content_space">
+                
+                <div class="center_box">
+                <p>Batch successfully created and labels printed for each crate.</p>
+                <br />
+                    <form id="admin_action">
+                        <p><input type="button" value="Create A New Batch" onclick="window.location ='fishermen.html'" class="act_button"></p>
+                        <p><input type="button" value="Undo Last Batch Creation" onclick="document.getElementById('undone').style.display='block';" class="act_button"></p>
+                    </form>
+                    <br />
+                    <div id="undone" style="display:none; color:#DE2926;">Batch creation successfully reversed.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
+</body>
+</html>

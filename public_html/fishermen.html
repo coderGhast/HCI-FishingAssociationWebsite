@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <title>Consolidated Fishing Association - Register Batches</title>
+
+
+  <script>
+    function create_batch(){
+      var form = document.getElementById('new_batch');
+
+      if(form.crate_number.value > 0 && form.batch_weight.value > 0
+        && form.species.value != "------" && form.fish_size.value != "------"){
+        window.location = "batchsubmit.html";
+    } else {
+      alert("One or more fields have not been completed. Please complete all fields and then try again.");
+    }
+  }
+</script>
+
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <div id="header">
+      <div id="header_title">
+        <h1>Consolidated Fishing Association</h1>
+      </div>
+      <div id="logged_in">Logged in as <em>fishermen</em></div>
+    </div>
+
+    <div id="nav">
+      <div id="nav_holder" name="top">
+        <ul>
+          <div class="link_holder"><li class="topLink"><a href="fishermenindex.html">Home</a></li></div>
+          <div class="link_holder"><li class="topLink"><a href="fishermen.html">Register Batches</a></li></div>
+          <div class="link_holder"><li class="topLink"><a href="index.html">Logout</a></li></div>
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="content_wrapper">
+      <div id="content_space">
+
+        <h3>Register Batches for Auctions</h3>
+        <p>Please enter the information about the batches you will to sell on the system. Once all fields have been completed, click 'Upload &amp; Print Labels' to complete the process and print out label for each crate in the batches.</p>
+        
+        <div id="catch_boxes">
+          <form id="new_batch">
+            Number of crates:
+            <br />
+            <input type="number" placeholder="0" name="crate_number" class="fish_entry" min="1">
+            <br />
+            Species of this batch:
+            <br />
+            <select name="species" form="new_batch" required class="fish_entry">
+              <option disabled selected>------</option>
+              <option value="salmon">Salmon</option>
+              <option value="tuna">Tuna</option>
+              <option value="cod">Cod</option>
+              <option value="haddock">Haddock</option>
+              <option value="plaice">Plaice</option>
+              <option value="sardines">Sardines</option>
+              <option value="trout">Trout</option>
+            </select>
+            <br />
+            Size category of this batch:
+            <br />
+            <select name="fish_size" form="new_batch" required class="fish_entry">
+              <option disabled selected>------</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <br /> 
+            Total weight of the batch (kg):
+            <br />
+            <input type="number" placeholder="0" name="batch_weight" class="fish_entry" min="1">
+            <br />
+            <input type="button" value="Upload &amp; Print Labels" onclick="create_batch()" class="fish_button">
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+  </div>
+</body>
+</html>

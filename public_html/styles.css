@@ -12,7 +12,7 @@ h1, h2, h3, h4{
     font-weight:normal;
 }
 p{
-    margin:0px;
+
 }
 
 #wrapper{
@@ -28,7 +28,7 @@ p{
 }
 
 #content_wrapper{
-    width:960px;
+    width:940px;
     min-height:100px;
     background:#fff;
     padding:15px;
@@ -42,7 +42,7 @@ p{
 
 .center_box{
     text-align: center;
-    width: 975px;
+    width: 100%;
     margin: auto;
     display:inline-block;
     vertical-align: middle;
@@ -80,8 +80,8 @@ p{
     margin-left:40%;
 }
 
-#new_user{
-
+#new_batch{
+    margin-left:40%;
 }
 
 .login_box {
@@ -101,6 +101,13 @@ p{
 .act_button{
     padding:5px;
     font-size: 17px;
+}
+.fish_entry{
+    padding:10px;
+    font-size:19px;
+}
+.fish_button{
+    font-size: 22px;
 }
 #logged_in{
     width: 100px;
@@ -122,7 +129,6 @@ p{
 #nav_holder{
     background:#92BBD1;
     padding: 0px 0px 0px 5px;
-    width: 984px;
     height:40px;
     margin: auto;
     border:1px solid #1c1c1c;
