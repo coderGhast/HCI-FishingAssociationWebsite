@@ -116,6 +116,18 @@ p{
     margin-right: 5px;
 }
 
+table{
+    margin-left:350px;
+}
+
+td{
+    padding:10px;
+    padding-right:20px;
+}
+.wareform{
+    margin-left:350px;
+}
+
 #header{
     padding-top:10px;
     text-align: center;
