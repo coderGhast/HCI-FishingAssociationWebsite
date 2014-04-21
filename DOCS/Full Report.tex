@@ -306,6 +306,23 @@ Password: pass
 
 A viewer can move around the site as if it were completed, without the full implementation of the system. The majority of the forms that are on the site can be tested, although not everything will work (i.e. You cannot 'pay' for an auction, or pull up all of the different species/sizes of batches from a database when creating an auction as a 'buyer').
 
+\subsection{Pagelist}
+This is a list of all of the available pages on the prototype website. While the illusion of needing a password is presented, any of these pages can be accessed directly, without the need for a password or user account.
+\begin{itemize}
+	\item{accountmade.html}
+\item{admin.html}
+\item{adminindex.htm}
+\item{auctioncreated.html}
+\item{batchsubmit.html}
+\item{buyer.html}
+\item{buyerindex.html}
+\item{fishermen.html}
+\item{fishermenindex.html}
+\item{index.html}
+\item{warehouse.html}
+\item{warehouseindex.html}
+\end{itemize}
+
 %----------------------------------------------------------------------------------------
 %	Shneiderman's 8 GOLDERN RULES
 %----------------------------------------------------------------------------------------
@@ -314,57 +331,61 @@ A viewer can move around the site as if it were completed, without the full impl
 To see if my prototype was of reasonable design for a user to use with little frustration, I evaluated it against Shneiderman's 8 Golden Rules of user interface design. Through doing this, I was able to improve my prototype more, which in effect could potentially lead to a better resulting website if this were taken through to the final product release stage.
 
 \subsection{Consistency}
-The prototype is consistent in it's design and layout of the ways that a user can use the functions of the website, through doing this, a user who may have an account for both a buyer and an administrator, knows that they can access their main controls from the navigation bar in the header, and that the logout button will always be on the navigation bar at the end.
+The prototype has consistency in it's basic structure and layout, with particular reference to the navigation and where a user may see who they are logged in as. The login button is consistently at the end of the navigation bar, there is always a button to reach the home, and always a button to reach the main tasks that the user would want to do.
 
-On each screen, the header always tells the user who they are logged in as, and so keeps the consistency of what account a user might be on if they are using a computer which might be shared by multiple account holders. In the prototype, this shows 'buyer', 'admin', 'fishermen' and 'warehouse'. In the release, this would show the users actual account name.
+At the top right of the header section always tells the user who they are logged in as. This helps a user with what account they might be logged into, which can be helpful if they are using a computer shared by multiple account holders. In the prototype, this shows 'buyer', 'admin', 'fishermen' and 'warehouse'. In the release, this would show the users actual account name, e.g. 'buyer50458', 'fisherman0272'.
 
 \subsection{Shortcuts}
-The sections that each individual user has access to are all relatively easy to access, and can be reached in one or two pages maximum. As the website it expands, it may be worthwhile including a break crumb trail, or a search bar, in order to help a user quickly find the page they require. For now though, all of the information they need to complete their tasks is so easy to reach that they are not required.
+The sections that each individual user has access to are all relatively easy to access, and can be reached in one or two pages maximum. As the website it expands, it may be worthwhile including a breadcrumb trail and/or a search bar, in order to help a user quickly find the page they require. For now though, all of the information they need to complete their tasks is so easy to reach that they are not required.
 
 Also in release, to help frequent users, it would be worthwhile adding a 'Remember me' check box to the login, allowing a user to leave the website entirely, and return at a later stage already logged in.
 
 \subsection{Informative Feedback}
-On each action a user can take in the prototype, there is often some form of feedback that they have completed a task. Examples of this are such as placing a bid on an auction item as a buyer. When they click to place a bid, they are first asked if the amount they want to bid is correct. If they confirm, a number of things can happen. If the amount they enter is too low, they will be told so. However if it is correct, they user will instantly see their bid has been placed and that they are now the new highest bidder.
+On each action a user can take in the prototype, there is often some form of feedback that they have completed a task. Examples of this are such as placing a bid on an auction item as a buyer. When they click to place a bid, they are first asked if the amount they want to bid is correct. If they confirm, a number of things can happen. If the amount they enter is too low, they will be told so with a pop-up box and no further action will be taken. However if it is a valid amount, the auction lot will be updated to display their bid amount as the highest, and their username as the highest bidder.
+
+Most actions on the website perform some kind of feedback, to ensure the user that the website is responding to their requests, and reacting to their actions. Doing this creates a sense of security for the user, where they can feel that they are having an actual effect on the website and in control of their section of it.
 
 \subsection{Closure Dialog}
-There is closure in the prototype for areas where the user has followed a series of steps to do something, and then reaches a conclusion. An example of this is when an administrator user creates an account on the website, but then might realize they have made a mistake. One the screen confirming that they have made the account, there is a button to 'Undo' the account creation. By clicking this, they are prompted to ask if they are sure they want to Undo the account creation. When they hit 'Yes', the account is removed (in full release), and a message in red is displayed to the user on the page they are on saying that  the account they have just made has now been removed.
+There is closure in the prototype for areas where the user has followed a series of steps to do something, and then reaches a conclusion. An example of this is when an administrator user creates an account on the website, but then might realize they have made a mistake. On the screen confirming that they have made a new user account, there is a button to 'Undo' the account creation. By clicking this, they are asked if they are sure they want to reverse the account creation. When they hit 'Yes', the account is 'removed', and a message in red is displayed to the user on the page to give them closure that the account they have just made has now been removed.
 
-This message provides the user with the feedback  that their action has been completed, and that they were sure it was the action they wanted to do. Through this, the user gets closure that their task has successfully been completed, and the account creation reversed. On the same page there is also a button to create a new account, so they can click this and be taken to the account creation page, bringing them back safely full circle.
+This message provides the user with the feedback that their action has been completed, and that they were sure it was the action they wanted to do. Through this, the user gets closure that their task has successfully been completed, and the account creation reversed. On the same page there is also a button to create a new account, so they can click this and be taken to the account creation page, bringing them back full circle.
 
 \subsection{Error Handling}
 With a website handling currency and sensitive information, it is important that there is robust error handling. For the prototype, this comes in the forms of checking that user input is correct, or that the user hasn't tried to process something without any actual data to process.
 
-For an administrator, this means that no fields can be blank. They must use a correctly formatted e-mail address, that follows the e-mail style conventions (@ .), and that when they enter for a new user password, they must enter it twice, to be sure that they entered the password correctly.
+For an administrator, this means that no fields can be blank when creating a new user account. They must use a correctly formatted e-mail address, that follows the e-mail naming-style conventions (@ and  .com/.org etc), and that when they enter for a new user password, they must enter it twice, to be sure that they entered the password correctly.
 
-Fishermen are unable to create new batches without filling in all of the needed information. A warehouse memeber cannot make auction lots from batches without selecting at least one batch. A buyer cannot place a bid onto an auction lot without first entering an amount to bid that is higher than the previous bid amount. trying to do so will result in their task being stopped and they will be informed of their mistake.
+Similarly fishermen are unable to create new batches without filling in all of the needed information. A warehouse member cannot make auction lots from batches without selecting at least one batch. A buyer cannot place a bid onto an auction lot without first entering an amount to bid that is higher than the previous bid amount. Trying to enter a lower bid amount than the current highest bid will result in their task being stopped and they will be informed of their mistake and asked to try again.
 
 \subsection{Action Reversal}
-Many actions in the prototype can be reversed. The main ones are that an administrator can undo the creation of an account, in case they made a mistake with some of the information provided, and fishermen can undo the creation of batch if they also made an error in their data entry. This is easy to do, through the click of a button after the creation, and they will be asked to confirm if that is what they do want to do.
+Many actions in the prototype can be reversed. The main ones are that an administrator can undo the creation of an account, in case they made a mistake with some of the information provided, and fishermen can undo the creation of batch if they also made an error in their data entry. This is easy to do, through the click of a button after the creation, and they will be asked to confirm if that is what they do want to do and then the action will be reversed and declare it to the user.
 
-On the other hand, I have not allowed a user to undo something such as placing a bid on an item. I feel that doing this would be counter-productive to the system, and that asking the user for confirmation before bidding is enough. If a user were able to undo a bid on an item, it might confuse other bidders, who see the latest bid raise, then fall again, and so could be used to exploit the system.
+On the other hand, I have not allowed a user to undo some actions, such as placing a bid on an item. I feel that doing this would be counter-productive to the system and cause integrity issues.  The user is asked for confirmation before placing a bid, and I feel that this should be their warning that once they place a bid, then they cannot reverse it. If a user were able to undo a bid on an item, it might confuse other bidders who see the latest bid raise and then then fall again. It could also be used to exploit the system by forcing other bidders to bid higher than a bid someone has entered and then removed.
 
 \subsection{Internal Locus of Control}
 The prototype makes the user feel in control, as any action they take gives them a response, and the system expects the user to control the flow of what happens while they are on the website. The only time the user is prompted for a response is when they themselves have already pushed for an action. This can be seen on occasions like when a buyer is bidding on a lot by their own choice and are then asked to confirm if this is their decision, giving them the control and power over the steps taken.
 
+Throughout using the website, the user will feel that they are in control of the website, and that no action happens without their consent or some form of control with it. This provides the user with a sense of security and comfort when using the website.
+
 \subsection{Short-Term Memory Load Reduction}
-In order to reduce memory load on the users, the information that  they need for a page is consolidated onto a single page. The best example of this is on the buyer Auctions page. Here, they may see any currently running auctions on the left, where they may bid and keep their eyes on them, while on the right hand side, a little smaller, they can see what auctions they have previously bid on. By keeping these bits of content grouped together, it allows the user to remember what they have bid on and won, while giving them the chance to bid on other items at the same time.
+In order to reduce memory load on the users, the information that  they need for a page is often consolidated onto a single page. The best example of this is on the buyer Auctions page. Here, a buyer may see any currently running auctions on the left, where they may bid and keep their eyes on them. While on the right hand side they can see what auctions they have previously bid on and who won the auction. By keeping these bits of content grouped together, it allows the user to see what they have bid on and won, while giving them the chance to bid on other items at the same time without having to keep it in memory.
 
-Since it is possible a user might be trying to fill some stock inventory, and have a mental list of what they want, having these two sections together can be a great help to them. It allows them not to have to focus on a mental checklist so much of what they have previously won or perhaps bid on and lost, and instead see them right next to where they might try and win another new lot.
+Since it is possible a buyer might be trying to fill some stock inventory of a store they own, and have a mental checklist of what they want, having these two sections together can be a great help to them. It allows them not to have to focus on what they have previously won or perhaps bid on and lost, and instead see them right next to where they might try and win another new lot to fulfill their requirements.
 
-A smaller but similar example, is how an administrator user enters all information about a new user account on the same page. It is possible that each part of the user information could be included on a new page. However, by group it all in one place, the admin can easily see what fields they have already filled out and which are still to be completed, reducing their short-term memory load by keeping everything they need to be aware of right in front of them.
+A smaller but similar example, is how an administrator user enters all information about a new user account on the same page. It is possible that each part of the user information could be entered and included on a new page. However, by grouping it all in one place, the administrator can easily see what fields they have already filled out and which are still to be completed, reducing their short-term memory load by keeping everything they need to be aware of right in front of them.
 
 %====================
 %     REFLECTION
 %====================
 
 \section{Reflection}
-The resulting prototype I have created, based upon the requirements specification provided with the assignment brief has been built on my task analysis and design decisions, formed through thinking of how a user would need to interact with the website. It has been evaluated against Shneiderman's 8 golden rules, and has been changed to ensure that it follows these rules. In regards to all this, I feel that my prototype is an acceptable prototype for the task set, and that it paves a clear way for the potential future release version of the website.
+The prototype I have created, based upon the requirements specification provided with the assignment brief, has been built on my task analysis and design decisions, formed through thinking of how specific types of users would need to interact with the website. It has been evaluated against Shneiderman's 8 golden rules, and has been changed to ensure that it follows these rules. In regards to all this, I feel that my prototype is an acceptable prototype for the task set, and that it paves a clear way for the potential future release version of the website.
 
-That is not to say that there are not improvements that could be made on the website, however. There are a number of features and sections of functionality that I can think of that have not been included in the prototype. An administration user might want to see a full list of all accounts and be able to delete and edit them from this list. This wasn't included in the requirements specification though, and so it also wasn't included in the prototype. I feel this is something that could further improve the usability of the website.
+That is not to say that there are not improvements that could be made. There are a number of features and sections of functionality that I can think of that have not been included in the prototype. An administration user might want to see a full list of all accounts and be able to delete and edit them from this list. This wasn't included in the requirements specification though, and so it also wasn't included in the prototype. I feel this is something that could further improve the usability of the website.
 
 Similarly, if more pages were to be added, it would be worthwhile to include a 'breadcrumb' trail, displaying where the user started their navigation (HOME) on the website, to where they currently are, with links leading back through the pages they would have taken to reach the point they are at. With the website in it's current state though, I did not feel this was necessary to be included, and in a real world situation, saving time by not adding currently unnecessary features also saves money. I felt it was a fair choice to leave out aspects like this and a search bar.
 
-With what was provided in the requirements specification, I believe my prototype website meets the expectations of the tasks that it's users would want to do on and with the website. I think that through my designs, I have planned to ease user navigation through what they need and attempted to keep any frustrations to a minimum.
+With what was provided in the requirements specification, I believe my prototype website meets the expectations of the tasks that it's users would want to do on and with the website. I think that through my designs, I have planned to ease user navigation through what they need and attempted to keep any frustrations to a minimum and complete their tasks, and appropriately displayed how this can be achieved through my design and prototype.
 
 %----------------------------------------------------------------------------------------
 \clearpage
