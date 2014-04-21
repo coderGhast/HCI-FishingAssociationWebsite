@@ -116,16 +116,37 @@ p{
     margin-right: 5px;
 }
 
+.tenmin{
+    color:#F03A3A;
+}
+
+#auction_items{
+    width:60%;
+    float:left;
+    min-height:400px;
+}
+
+#time_display{
+    padding:0px;
+    margin:0px;
+}
+
 table{
-    margin-left:350px;
+    margin-left:300px;
+}
+
+#auc_table{
+    margin-left: 0px;
 }
 
 td{
+    vertical-align: top;
     padding:10px;
-    padding-right:20px;
+    padding-right:30px;
+    padding-left: 30px;
 }
 .wareform{
-    margin-left:350px;
+    margin-left:300px;
 }
 
 #header{

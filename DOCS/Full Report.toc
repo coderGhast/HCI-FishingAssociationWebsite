@@ -1,13 +1,13 @@
-\contentsline {section}{Introduction}{3}
-\contentsline {section}{Task Analysis}{3}
-\contentsline {subsection}{Who is involved?}{3}
-\contentsline {subsection}{Use Case Diagram}{4}
-\contentsline {subsection}{Data flow}{4}
-\contentsline {subsection}{State Transitions}{6}
-\contentsline {section}{Design}{7}
-\contentsline {subsection}{Fishermen}{7}
-\contentsline {subsection}{Warehouse Staff}{7}
-\contentsline {subsection}{Buyer}{7}
-\contentsline {subsection}{Administration}{8}
-\contentsline {section}{Prototype}{8}
-\contentsline {section}{Shneiderman’s 8 Golden Rules}{8}
+\contentsline {section}{Introduction}{3}{section*.2}
+\contentsline {section}{Task Analysis}{3}{section*.3}
+\contentsline {subsection}{Who is involved?}{3}{section*.4}
+\contentsline {subsection}{Use Case Diagram}{4}{section*.6}
+\contentsline {subsection}{Data flow}{5}{section*.8}
+\contentsline {subsection}{State Transitions}{6}{section*.11}
+\contentsline {section}{Design}{8}{section*.14}
+\contentsline {subsection}{Fishermen}{8}{section*.15}
+\contentsline {subsection}{Warehouse Staff}{8}{section*.16}
+\contentsline {subsection}{Buyer}{8}{section*.17}
+\contentsline {subsection}{Administration}{9}{section*.18}
+\contentsline {section}{Prototype}{9}{section*.19}
+\contentsline {section}{Shneiderman’s 8 Golden Rules}{9}{section*.20}

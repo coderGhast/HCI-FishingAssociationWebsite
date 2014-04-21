@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <title>Consolidated Fishing Association - Auction Created</title>
+
+    <script>
+
+    /* Code from: http://stackoverflow.com/questions/18229022/how-to-show-current-time-in-javascript-in-the-format-hhmmss */
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+        window.onload = function(){
+            var end_time = new Date().addHours(4);
+            var hours = end_time.getHours();
+            var minutes = end_time.getMinutes();
+            var seconds = end_time.getSeconds();
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+
+            document.getElementById('time_display').innerHTML = "Auction successfully created. Auction will end at " + hours + ":" + minutes + ":" + seconds + ".";
+        }
+
+        /* Code from: http://stackoverflow.com/questions/1050720/adding-hours-to-javascript-date-object */
+        Date.prototype.addHours= function(h){
+            this.setHours(this.getHours()+h);
+            return this;
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <div id="header_title">
+                <h1>Consolidated Fishing Association</h1>
+            </div>
+            <div id="logged_in">Logged in as <em>warehouse</em></div>
+        </div>
+
+        <div id="nav">
+            <div id="nav_holder" name="top">
+                <ul>
+                    <div class="link_holder"><li class="topLink"><a href="warehouseindex.html">Home</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="warehouse.html">Create Auction</a></li></div>
+                    <div class="link_holder"><li class="topLink"><a href="index.html">Logout</a></li></div>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content_wrapper">
+            <div id="content_space">
+
+                <div class="center_box">
+                    <p>Auction is of species <strong>Tuna</strong> and size <strong>Small</strong>.
+                    <div id="time_display"></div></p>
+                    <br />
+                    <form id="admin_action">
+                        <p><input type="button" value="Create A New Auction" onclick="window.location ='warehouse.html'" class="act_button"></p>
+                        <p><input type="button" value="Close Last Auction Created Creation" onclick="document.getElementById('undone').style.display='block';" class="act_button"></p>
+                    </form>
+                    <br />
+                    <div id="undone" style="display:none; color:#DE2926;">Auction creation successfully reversed.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
+</body>
+</html>

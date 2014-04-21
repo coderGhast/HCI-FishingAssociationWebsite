@@ -3,20 +3,49 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-  <title>Consolidated Fishing Association - Create Auction Lot</title>
+  <title>Consolidated Fishing Association - Auctions</title>
 
 
   <script>
-  function create_auction(){
-    var form = document.getElementById('new_batch');
 
-    if(form.crate_number.value > 0 && form.batch_weight.value > 0
-      && form.species.value != "------" && form.fish_size.value != "------"){
-        window.location = "batchsubmit.html";
-    } else {
-      alert("One or more fields have not been completed. Please complete all fields and then try again.");
+    var pre1 = 58;
+    var pre2 = 20;
+    var pre3 = 0;
+
+    function confirm_bid(div_element, amount){
+      var confirmation = window.confirm("Are you sure you want to bid £" + amount + "?");
+      if(confirmation == true){
+        if(div_element.localeCompare('cb1') == 0){
+          if(parseInt(amount) > parseInt(pre1)){
+            var ele = document.getElementById(div_element);
+            ele.innerHTML = "<strong>Current bid:</strong> £" + amount;
+            pre1 = amount;
+            document.getElementById('bidder1').innerHTML = "You: <em>buyer</em>"
+          } else {
+            alert("Cannot bid lower than current amount. Please enter a higher bid and try again");
+          }
+        } else if(div_element.localeCompare('cb2') == 0){
+          if(parseInt(amount) > parseInt(pre2)){
+            var ele = document.getElementById(div_element);
+            ele.innerHTML = "<strong>Current bid:</strong> £" + amount;
+            pre2 = amount;
+            document.getElementById('bidder2').innerHTML = "You: <em>buyer</em>"
+          } else {
+            alert("Cannot bid lower than current amount. Please enter a higher bid and try again");
+          }
+        } else if(div_element.localeCompare('cb3') == 0){
+          if(parseInt(amount) > parseInt(pre3)){
+            var ele = document.getElementById(div_element);
+            ele.innerHTML = "<strong>Current bid:</strong> £" + amount;
+            pre3 = amount;
+            document.getElementById('bidder3').innerHTML = "You: <em>buyer</em>"
+          } else {
+            alert("Cannot bid lower than current amount. Please enter a higher bid and try again");
+          }
+        }
+      }
     }
-  }
+
   </script>
 
 </head>
@@ -28,14 +57,14 @@
       <div id="header_title">
         <h1>Consolidated Fishing Association</h1>
       </div>
-      <div id="logged_in">Logged in as <em>warehouse</em></div>
+      <div id="logged_in">Logged in as <em>buyer</em></div>
     </div>
 
     <div id="nav">
       <div id="nav_holder" name="top">
         <ul>
-          <div class="link_holder"><li class="topLink"><a href="fishermenindex.html">Home</a></li></div>
-          <div class="link_holder"><li class="topLink"><a href="fishermen.html">Create Auction</a></li></div>
+          <div class="link_holder"><li class="topLink"><a href="buyerindex.html">Home</a></li></div>
+          <div class="link_holder"><li class="topLink"><a href="buyer.html">Auctions</a></li></div>
           <div class="link_holder"><li class="topLink"><a href="index.html">Logout</a></li></div>
 
         </ul>
@@ -45,44 +74,95 @@
     <div id="content_wrapper">
       <div id="content_space">
 
-        <h3>Choose Batches to Create Auction</h3>
-        <p>Choose from the batches below in order to create an auction lot. Once you have selected all of the batches, please set a starting price and then click 'Submit'.</p>
+        <h3>Available Auctions</h3>
+        <br />
 
-          <div id="catch_boxes">
-            <br />
-            <form id="new_batch">
-              <p>Number of crates:</p>
-              <p><input type="number" placeholder="0" name="crate_number" class="fish_entry" min="1"></p>
-              <p>Species of this batch:</p>
-              <p>
-                <select name="species" form="new_batch" required class="fish_entry">
-                  <option disabled selected>------</option>
-                  <option value="salmon">Salmon</option>
-                  <option value="tuna">Tuna</option>
-                  <option value="cod">Cod</option>
-                  <option value="haddock">Haddock</option>
-                  <option value="plaice">Plaice</option>
-                  <option value="sardines">Sardines</option>
-                  <option value="trout">Trout</option>
-                </select>
-              </p>
-              <p>Size category of this batch:</p>
-              <p>
-                <select name="fish_size" form="new_batch" required class="fish_entry">
-                  <option disabled selected>------</option>
-                  <option value="small">Small</option>
-                  <option value="medium">Medium</option>
-                  <option value="large">Large</option>
-                </select>
-              </p> 
-              <p>Total weight of the batch (kg):</p>
-              <p><input type="number" placeholder="0" name="batch_weight" class="fish_entry" min="1"></p>
+        <form id="auction_items">
+          <table id="auc_table">
 
-              <br />
-              <input type="button" value="Upload &amp; Print Labels" onclick="create_batch()" class="fish_button">
-            </form>
-          </div>
+            <tr style="background:#D1EDED">
+              <td>
+                <h3>Tuna</h3>
+                <strong>Size:</strong> Small<br/>
+                <strong>Total Batch Weight:</strong> 50Kg<br />
 
+                <strong>Time remaining:</strong> <strong class="tenmin">10m</strong> left.<br />
+                <strong>End time: 10:14:32</strong>
+              </td>
+              <td>
+                <strong>Current highest bidder:</strong><div id="bidder1">buyer3047</div><br />
+                <div id="cb1"><strong>Current bid:</strong> £58</div>
+                Enter your bid:<br /> £<input type="number" id="cbi1" placeholder="0" min="0"><br />
+                <input type="button" value="Place Bid" onclick="confirm_bid('cb1', document.getElementById('cbi1').value)" />
+              </td>
+            </tr>
+
+            <tr style="background:#EDF7F7">
+              <td>
+                <h3>Trout</h3>
+                <strong>Size:</strong> Large<br/>
+                <strong>Total Batch Weight:</strong> 28Kg<br />
+
+                <strong>Time remaining:</strong> 25m left.<br />
+                <strong>End time: 10:29:51</strong>
+              </td>
+              <td>
+                <strong>Current highest bidder:</strong><div id="bidder3"><em>No bidders</em></div><br />
+                <div id="cb3"><strong>Current bid:</strong> £0</div>
+                Enter your bid:<br /> £<input type="number" id="cbi3" placeholder="0" min="0"><br />
+                <input type="button" value="Place Bid" onclick="confirm_bid('cb3', document.getElementById('cbi3').value)" />
+              </td>
+            </tr>
+
+            <tr style="background:#D1EDED">
+              <td>
+                <h3>Salmon</h3>
+                <strong>Size:</strong> Large<br/>
+                <strong>Total Batch Weight:</strong> 14Kg<br />
+
+                <strong>Time remaining:</strong> 34m left.<br />
+                <strong>End time: 10:38:14</strong>
+              </td>
+              <td>
+                <strong>Current highest bidder:</strong><div id="bidder2">buyer102</div><br />
+                <div id="cb2"><strong>Current bid:</strong> £20</div>
+                Enter your bid:<br /> £<input type="number" id="cbi2" placeholder="0" min="0"><br />
+                <input type="button" value="Place Bid" onclick="confirm_bid('cb2', document.getElementById('cbi2').value)" />
+              </td>
+            </tr>
+
+          </table>
+        </form>
+
+        <form id="past_auctions">
+          <h3>Previously bid on Auctions</h3><br />
+          <table id="past_table">
+            <tr style="background:#D1EDED">
+              <td>
+                <h3>Cod</h3>
+                <strong>Size:</strong> Small<br/>
+                <strong>Total Batch Weight:</strong> 15Kg<br />
+                <strong>End time:</strong> 06:11:02<br />
+                <strong>Winner:</strong> <em>buyer (You)</em><br />
+                <strong>Final Bid: </strong> £38.30
+                <input type="button" value="Pay Now" onclick="alert('Disabled for prototype - Would take you to Payment options/Paypal')">
+              </td>
+            </tr>
+
+            <tr style="background:#EDF7F7">
+              <td>
+                <h3>Salmon</h3>
+                <strong>Size:</strong> Medium<br/>
+                <strong>Total Batch Weight:</strong> 100Kg<br />
+                <strong>End time:</strong> 07:47:42<br />
+                <strong>Winner:</strong> <em>buyer758</em><br />
+                <strong>Final Bid: </strong> £103.03
+                
+              </td>
+            </tr>
+          </table>
+        </form>
+        <div class="clear"></div>
       </div>
     </div>
 

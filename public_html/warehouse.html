@@ -8,16 +8,31 @@
 
   <script>
     function create_auction(){
-      var form = document.getElementById('new_batch');
+      var form = document.getElementById('items');
 
-      if(form.crate_number.value > 0 && form.batch_weight.value > 0
-        && form.species.value != "------" && form.fish_size.value != "------"){
-        window.location = "batchsubmit.html";
-    } else {
-      alert("One or more fields have not been completed. Please complete all fields and then try again.");
+      var counter = 0;
+      for (var j = 0; j < form.elements.length; j++)
+      {
+        if (form.elements[j].type == "checkbox")
+        {
+          if (form.elements[j].checked)
+          {
+            counter++;
+          }
+        }       
+      }
+
+      if(counter > 0){
+        window.location = "auctioncreated.html";
+      } else {
+        alert("At least one batch must be chosen to make an Auction lot");
+      }
     }
-  }
-</script>
+
+    function disabled_feature(){
+      alert("Functionality disabled for prototype. Currently the only choices are for species:Tuna and size:Small.");
+    }
+  </script>
 
 </head>
 <body>
@@ -46,87 +61,103 @@
       <div id="content_space">
 
         <h3>Choose Batches to Create Auction</h3>
-        <p>Choose from the batches below in order to create an auction lot. Once you have selected all of the batches, please set a starting price and then click 'Submit'.</p>
+        <p>Choose from the batches below in order to create an auction lot. Once you have selected all of the batches, please set a starting price and then click 'Submit'. Any batches you use for this Auction cannot
+          be used for future auctions.</p>
 
-        <div class="wareform">
-        Species:<br />
-          <select name="species" form="batch_type" required >
-            <option value="tuna" selected>Tuna</option>
-            <option value="salmon">Salmon</option>
-            <option value="cod">Cod</option>
-            <option value="haddock">Haddock</option>
-            <option value="plaice">Plaice</option>
-            <option value="sardines">Sardines</option>
-            <option value="trout">Trout</option>
-          </select><br />
-          Size:<br />
-          <select name="size" form="batch_type" required >
-            <option value="small" selected>Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select><br />
+          <div class="wareform">
+            Species:<br />
+            <select name="species" form="batch_type" required >
+              <option value="tuna" selected>Tuna</option>
+              <option value="salmon">Salmon</option>
+              <option value="cod">Cod</option>
+              <option value="haddock">Haddock</option>
+              <option value="plaice">Plaice</option>
+              <option value="sardines">Sardines</option>
+              <option value="trout">Trout</option>
+            </select><br />
+            Size:<br />
+            <select name="size" form="batch_type" required >
+              <option value="small" selected>Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select><br />
+            <input type="button" value="Select Species/Size" onclick="disabled_feature()">
+          </div>
+          <br />
+
+          <form id="items">
+            <table>
+
+              <tr style="background:#D1EDED">
+                <td>
+                  <h3>Tuna</h3>
+                  <strong>Age:</strong> 33 minutes<br />
+                  <strong>Size:</strong> Small<br/>
+                  <strong>Total Batch Weight:</strong> 50Kg
+                </td>
+                <td>
+                  Add to auction:<br /><input name="t1" value="t1" type="checkbox" form="items">
+                </td>
+              </tr>
+
+              <tr style="background:#EDF7F7">
+                <td>
+                  <h3>Tuna</h3>
+                  <strong>Age:</strong> 31 minutes<br />
+                  <strong>Size:</strong> Small<br/>
+                  <strong>Total Batch Weight:</strong> 64Kg
+                </td>
+                <td>
+                  Add to auction:<br /><input name="t2" value="t2" type="checkbox" form="items">
+                </td>
+              </tr>
+
+
+              <tr style="background:#D1EDED">
+                <td>
+                  <h3>Tuna</h3>
+                  <strong>Age:</strong> 27 minutes<br />
+                  <strong>Size:</strong> Small<br/>
+                  <strong>Total Batch Weight:</strong> 20Kg
+                </td>
+                <td>
+                  Add to auction:<br /><input name="t3" value="t3" type="checkbox" form="items">
+                </td>
+              </tr>
+
+
+              <tr style="background:#EDF7F7">
+                <td>
+                  <h3>Tuna</h3>
+                  <strong>Age:</strong> 23 minutes<br />
+                  <strong>Size:</strong> Small<br/>
+                  <strong>Total Batch Weight:</strong> 42Kg
+                </td>
+                <td>
+                  Add to auction:<br /><input name="t4" value="t4" type="checkbox" form="items">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+
+                </td>
+                <td>
+                Starting Price: <br/>
+                  £<input type="number" placeholder="0" form="items" name="price" />
+                  <input type="button" onclick="create_auction()" value="Create Auction">
+                </td>
+              </tr>
+
+            </table>
+          </form>
+
+          <div class="clear"></div>
         </div>
-
-        <table>
-
-          <tr style="background:#D1EDED">
-            <td>
-              <h3>Tuna</h3>
-              <strong>Age:</strong> 33 minutes<br />
-              <strong>Size:</strong> Small<br/>
-              <strong>Total Batch Weight:</strong> 50Kg
-            </td>
-            <td>
-              Add to auction:<br /><input name="t1" value="t1" type="checkbox" form="selected_batches">
-            </td>
-          </tr>
-
-          <tr style="background:#EDF7F7">
-            <td>
-              <h3>Tuna</h3>
-              <strong>Age:</strong> 31 minutes<br />
-              <strong>Size:</strong> Small<br/>
-              <strong>Total Batch Weight:</strong> 64Kg
-            </td>
-            <td>
-              Add to auction:<br /><input name="t2" value="t2" type="checkbox" form="selected_batches">
-            </td>
-          </tr>
-          
-
-          <tr style="background:#D1EDED">
-            <td>
-              <h3>Tuna</h3>
-              <strong>Age:</strong> 27 minutes<br />
-              <strong>Size:</strong> Small<br/>
-              <strong>Total Batch Weight:</strong> 20Kg
-            </td>
-            <td>
-              Add to auction:<br /><input name="t3" value="t3" type="checkbox" form="selected_batches">
-            </td>
-          </tr>
-          
-
-          <tr style="background:#EDF7F7">
-            <td>
-              <h3>Tuna</h3>
-              <strong>Age:</strong> 23 minutes<br />
-              <strong>Size:</strong> Small<br/>
-              <strong>Total Batch Weight:</strong> 42Kg
-            </td>
-            <td>
-              Add to auction:<br /><input name="t4" value="t4" type="checkbox" form="selected_batches">
-            </td>
-          </tr>
-          
-
-        </table>
-
       </div>
+
+      <div id="footer"></div>
+
     </div>
-
-    <div id="footer"></div>
-
-  </div>
-</body>
-</html>
+  </body>
+  </html>
