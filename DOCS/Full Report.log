@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  22 APR 2014 00:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  22 APR 2014 00:36
 entering extended mode
 **D:/Users/James/University*Documents/Modules/CS223/HCI-FishingAssociationWebsi
 te/DOCS/Full*Report.tex
@@ -371,56 +371,64 @@ py)>]
 <img/wf1.png, id=177, 1626.075pt x 1167.36125pt>
 File: img/wf1.png Graphic file (type png)
  <use img/wf1.png>
-Package pdftex.def Info: img/wf1.png used on input line 236.
+Package pdftex.def Info: img/wf1.png used on input line 238.
 (pdftex.def)             Requested size: 328.82706pt x 236.05092pt.
 
 <img/wf2.png, id=178, 1513.655pt x 1167.36125pt>
 File: img/wf2.png Graphic file (type png)
  <use img/wf2.png>
-Package pdftex.def Info: img/wf2.png used on input line 246.
+Package pdftex.def Info: img/wf2.png used on input line 248.
 (pdftex.def)             Requested size: 328.82706pt x 253.5962pt.
- [8 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
-bsite/DOCS/img/wf1.png (PNG copy)>] <img/wf3.png, id=185, 2153.04375pt x 1475.5
-125pt>
+ [8
+
+ <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWebsi
+te/DOCS/img/wf1.png (PNG copy)>] <img/wf3.png, id=185, 2153.04375pt x 1475.5125
+pt>
 File: img/wf3.png Graphic file (type png)
 
 <use img/wf3.png>
-Package pdftex.def Info: img/wf3.png used on input line 258.
+Package pdftex.def Info: img/wf3.png used on input line 260.
 (pdftex.def)             Requested size: 328.82706pt x 225.34741pt.
  [9 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationWe
 bsite/DOCS/img/wf2.png (PNG copy)>]
 <img/wf4.png, id=192, 2183.15625pt x 1526.70375pt>
 File: img/wf4.png Graphic file (type png)
  <use img/wf4.png>
-Package pdftex.def Info: img/wf4.png used on input line 272.
+Package pdftex.def Info: img/wf4.png used on input line 274.
 (pdftex.def)             Requested size: 328.82706pt x 229.9508pt.
  [10 <D:/Users/James/University Documents/Modules/CS223/HCI-FishingAssociationW
 ebsite/DOCS/img/wf3.png (PNG copy)>] [11 <D:/Users/James/University Documents/M
-odules/CS223/HCI-FishingAssociationWebsite/DOCS/img/wf4.png>]
+odules/CS223/HCI-FishingAssociationWebsite/DOCS/img/wf4.png>] [12
+
+]
 Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
- [12] [13] [14] [15]
+ [13
 
-AED: lastpage setting LastPage
-[16
+] [14] [15] [16
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+
+AED: lastpage setting LastPage
+[17
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
 
 ("D:\Users\James\University Documents\Modules\CS223\HCI-FishingAssociationWebsi
 te\DOCS\Full Report.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `Full*Report.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
  ) 
 Here is how much of TeX's memory you used:
- 6401 strings out of 493921
- 99133 string characters out of 3144875
- 184776 words of memory out of 3000000
+ 6402 strings out of 493921
+ 99140 string characters out of 3144875
+ 183776 words of memory out of 3000000
  9594 multiletter control sequences out of 15000+200000
  8669 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -431,9 +439,9 @@ Here is how much of TeX's memory you used:
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "Full Report.pdf" (16 pages, 773041 bytes).
+Output written on "Full Report.pdf" (17 pages, 774088 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

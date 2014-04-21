@@ -9,15 +9,15 @@
 \contentsline {subsection}{Warehouse Staff}{9}{section*.18}
 \contentsline {subsection}{Buyer}{10}{section*.20}
 \contentsline {subsection}{Administration}{11}{section*.22}
-\contentsline {section}{Prototype}{11}{section*.23}
+\contentsline {section}{Prototype}{12}{section*.23}
 \contentsline {subsection}{Pagelist}{12}{section*.24}
-\contentsline {section}{Shneiderman’s 8 Golden Rules}{12}{section*.25}
-\contentsline {subsection}{Consistency}{12}{section*.26}
+\contentsline {section}{Shneiderman’s 8 Golden Rules}{13}{section*.25}
+\contentsline {subsection}{Consistency}{13}{section*.26}
 \contentsline {subsection}{Shortcuts}{13}{section*.27}
 \contentsline {subsection}{Informative Feedback}{13}{section*.28}
 \contentsline {subsection}{Closure Dialog}{13}{section*.29}
-\contentsline {subsection}{Error Handling}{13}{section*.30}
+\contentsline {subsection}{Error Handling}{14}{section*.30}
 \contentsline {subsection}{Action Reversal}{14}{section*.31}
 \contentsline {subsection}{Internal Locus of Control}{14}{section*.32}
 \contentsline {subsection}{Short-Term Memory Load Reduction}{14}{section*.33}
-\contentsline {section}{Reflection}{14}{section*.34}
+\contentsline {section}{Reflection}{16}{section*.34}
